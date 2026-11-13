@@ -1,0 +1,26 @@
+Package: m6APrediction
+Type: Package
+Title: Predict N6-Methyladenosine (m6A) RNA Modification Sites
+Version: 1.0.0
+Authors@R: 
+    person("BIO215", "Student", email = "bio215.student@example.com",
+           role = c("aut", "cre"))
+Description: A random forest framework for predicting N6-methyladenosine
+    (m6A) RNA modification sites from transcript and sequence features. The
+    package bundles a model trained on 48055 human m6A sites and provides
+    single-site and batch prediction functions with documented examples and
+    tests.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports:
+    randomForest,
+    stats,
+    utils
+Suggests:
+    ggplot2,
+    knitr,
+    rmarkdown,
+    scales,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
